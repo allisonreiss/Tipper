@@ -132,14 +132,20 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.59897517570000003" green="0.97916280310000003" blue="1" alpha="0.64293573940000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.68644630005313756" green="1" blue="0.94983545021429772" alpha="0.58370928693521129" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="bgA-6s-vSc" appends="YES" id="CAz-h4-fiV"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tipper" id="FRr-ET-mnm"/>
+                    <navigationItem key="navigationItem" title="Tipper" id="FRr-ET-mnm">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="fib-Ov-eGJ">
+                            <connections>
+                                <segue destination="bb6-aE-Val" kind="show" id="WeJ-Mt-dY9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="Yto-Yg-8DB" id="bNG-Yr-MlG"/>
                         <outlet property="fiveSplitLabel" destination="u8m-Nt-PgO" id="y8U-I6-00O"/>
@@ -159,6 +165,45 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1721.25" y="97.183098591549296"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="55S-LF-i2Y">
+            <objects>
+                <viewController title="Settings" id="bb6-aE-Val" customClass="SettingsViewController" customModule="Tipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lYp-Og-quj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dD1-YV-YCL">
+                                <rect key="frame" x="16" y="190" width="288" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setDefaultTip:" destination="bb6-aE-Val" eventType="valueChanged" id="gq7-tP-uo1"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-tL-PnS">
+                                <rect key="frame" x="16" y="153" width="204" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="C3p-Cz-DUM"/>
+                    </view>
+                    <connections>
+                        <outlet property="defaultTipControl" destination="dD1-YV-YCL" id="cM0-o2-yPJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXS-OV-Omx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2469.375" y="97.183098591549296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wJQ-EJ-olY">

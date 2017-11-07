@@ -26,6 +26,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        
+       billField.becomeFirstResponder()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        //Access UserDefaults
+        let defaults = UserDefaults.standard
+        
+        if let intValue = defaults.value(forKey:"defaultTip") as? Int
+        {
+            tipControl.selectedSegmentIndex = intValue
+        }
+        
+        calculateTip(self)
+        
         billField.becomeFirstResponder()
     }
     
@@ -57,5 +75,7 @@ class ViewController: UIViewController {
         fourSplitLabel.text = String(format: "$%.2f", fourSplit)
         fiveSplitLabel.text = String(format: "$%.2f", fiveSplit)
     }
+    
+    
 }
 

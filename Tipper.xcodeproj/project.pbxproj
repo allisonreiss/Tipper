@@ -14,6 +14,7 @@
 		FB7987981FB0DB97009C2101 /* TipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7987971FB0DB97009C2101 /* TipperTests.swift */; };
 		FB7987A31FB0DB97009C2101 /* TipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7987A21FB0DB97009C2101 /* TipperUITests.swift */; };
 		FB7987B61FB1066D009C2101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7987861FB0DB96009C2101 /* Main.storyboard */; };
+		FB7987BA1FB16CC0009C2101 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7987B91FB16CC0009C2101 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FB79879E1FB0DB97009C2101 /* TipperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7987A21FB0DB97009C2101 /* TipperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipperUITests.swift; sourceTree = "<group>"; };
 		FB7987A41FB0DB97009C2101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7987B91FB16CC0009C2101 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				FB7987821FB0DB96009C2101 /* AppDelegate.swift */,
 				FB7987841FB0DB96009C2101 /* ViewController.swift */,
+				FB7987B91FB16CC0009C2101 /* SettingsViewController.swift */,
 				FB7987861FB0DB96009C2101 /* Main.storyboard */,
 				FB7987891FB0DB96009C2101 /* Assets.xcassets */,
 				FB79878B1FB0DB96009C2101 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				FB7987851FB0DB96009C2101 /* ViewController.swift in Sources */,
 				FB7987831FB0DB96009C2101 /* AppDelegate.swift in Sources */,
+				FB7987BA1FB16CC0009C2101 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
