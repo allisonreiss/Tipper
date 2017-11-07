@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		FB7987831FB0DB96009C2101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7987821FB0DB96009C2101 /* AppDelegate.swift */; };
 		FB7987851FB0DB96009C2101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7987841FB0DB96009C2101 /* ViewController.swift */; };
-		FB7987881FB0DB96009C2101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7987861FB0DB96009C2101 /* Main.storyboard */; };
 		FB79878A1FB0DB96009C2101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7987891FB0DB96009C2101 /* Assets.xcassets */; };
 		FB79878D1FB0DB96009C2101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB79878B1FB0DB96009C2101 /* LaunchScreen.storyboard */; };
 		FB7987981FB0DB97009C2101 /* TipperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7987971FB0DB97009C2101 /* TipperTests.swift */; };
 		FB7987A31FB0DB97009C2101 /* TipperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7987A21FB0DB97009C2101 /* TipperUITests.swift */; };
+		FB7987B61FB1066D009C2101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7987861FB0DB96009C2101 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,9 +232,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7987B61FB1066D009C2101 /* Main.storyboard in Resources */,
 				FB79878D1FB0DB96009C2101 /* LaunchScreen.storyboard in Resources */,
 				FB79878A1FB0DB96009C2101 /* Assets.xcassets in Resources */,
-				FB7987881FB0DB96009C2101 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
