@@ -25,7 +25,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I didn't see all of the hints at the bottom for the optional functionalities so I tried to figure them out
+myself first for a while just based off of the gifs of the examples.
 
 ## License
 
