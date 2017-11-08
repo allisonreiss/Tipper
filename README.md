@@ -13,8 +13,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
--[x] Settings page to change the background color
--[x] Show values for splitting the check
+* [x] Settings page to change the background color
+* [x] Show values for splitting the check
 - [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
