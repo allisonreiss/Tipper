@@ -117,6 +117,7 @@
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <color key="tintColor" red="0.069444602012820128" green="0.16079135176077772" blue="0.34686392939030219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="dyX-DP-bV2"/>
                                 </connections>
@@ -124,7 +125,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yto-Yg-8DB">
                                 <rect key="frame" x="16" y="81" width="288" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.10459844560000001" green="0.10459844560000001" blue="0.10459844560000001" alpha="0.49086707750000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.10459844560000001" green="0.10459844560000001" blue="0.10459844560000001" alpha="0.70999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                 <connections>
@@ -132,7 +133,7 @@
                                 </connections>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.68644630005313756" green="1" blue="0.94983545021429772" alpha="0.58370928693521129" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.68644630009999996" green="1" blue="0.94983545020000004" alpha="0.66309969189999995" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
@@ -182,6 +183,7 @@
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <color key="tintColor" red="0.069444602009999995" green="0.16079135180000001" blue="0.34686392939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="setDefaultTip:" destination="bb6-aE-Val" eventType="valueChanged" id="gq7-tP-uo1"/>
                                 </connections>
@@ -190,14 +192,37 @@
                                 <rect key="frame" x="16" y="153" width="204" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.10459844560000001" green="0.10459844560000001" blue="0.10459844560000001" alpha="0.70999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9G-fE-5Na">
+                                <rect key="frame" x="16" y="255" width="204" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10459844560000001" green="0.10459844560000001" blue="0.10459844560000001" alpha="0.70999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="l8v-Ge-YBT">
+                                <rect key="frame" x="16" y="292" width="288" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="blue"/>
+                                    <segment title="purple"/>
+                                    <segment title="green"/>
+                                    <segment title="red"/>
+                                </segments>
+                                <color key="tintColor" red="0.069444602009999995" green="0.16079135180000001" blue="0.34686392939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="setBackgroundColor:" destination="bb6-aE-Val" eventType="valueChanged" id="qI9-Zc-F3J"/>
+                                    <action selector="setDefaultTip:" destination="bb6-aE-Val" eventType="valueChanged" id="tjt-kw-fnW"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.68644630009999996" green="1" blue="0.94983545020000004" alpha="0.66309969189999995" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="C3p-Cz-DUM"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundColorControl" destination="l8v-Ge-YBT" id="Zzm-n6-Dgo"/>
                         <outlet property="defaultTipControl" destination="dD1-YV-YCL" id="cM0-o2-yPJ"/>
                     </connections>
                 </viewController>

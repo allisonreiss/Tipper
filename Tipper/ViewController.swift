@@ -31,7 +31,7 @@ class ViewController: UIViewController {
        billField.becomeFirstResponder()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
         //Access UserDefaults
@@ -45,6 +45,22 @@ class ViewController: UIViewController {
         calculateTip(self)
         
         billField.becomeFirstResponder()
+
+        if let colorIdx = defaults.value(forKey:"backColorIdx") as? Int
+        {
+            //Set color
+            switch colorIdx {
+            case 1:
+                self.view.backgroundColor = UIColor.purple
+            case 2:
+                self.view.backgroundColor = UIColor.green
+            case 3:
+                self.view.backgroundColor = UIColor.red
+            default:
+                self.view.backgroundColor = UIColor.cyan
+            }
+        }
+
     }
     
     override func didReceiveMemoryWarning() {
